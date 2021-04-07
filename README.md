@@ -21,3 +21,10 @@ https://www.google.com/imgres?imgurl=https%3A%2F%2Fcdn.dnaindia.com%2Fsites%2Fde
 
 
 https://www.usacricket.org/team-usa/ali-khan/
+
+
+# creation of difeerent student profile:
+
+|NAME|EMAIL|MOBILE|LANGUAGE|LOCATION|
+|----|-----|------|--------|--------|
+|BHANU|BARRIBHANUKRISHNA@GMAIL.COM|6305958425|ENGLISH|VISAKHAPATNAM|
