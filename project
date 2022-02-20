@@ -1,0 +1,1041 @@
+<!-----------------HomePage of Green stories--------------!>
+
+
+<html>
+   
+ <head>
+  
+ <title>GREEN STORIES</title>
+     
+  <link rel="stylesheet" type="text/css" href="home.css">
+    
+    <style>
+    
+        .center{
+ 
+     background-image: url('ur.jpg');
+    background-size: cover;
+    background-position:center;
+   background-repeat: no-repeat;
+  background-attachment: fixed;
+    background-size: 80% 100%
+     
+       }
+      
+
+  </style>
+       
+    </head>
+    <body>
+     
+   <div style="margin:0px auto;width:1200px;text-decoration: none;">
+          
+  <div class="head">
+  
+   <center STYLE="COLOR:RED; FONT:15PX;PADDING-top: 20PX;font-weight:Bold"> GREEN STORIES </CENTER>
+       
+     </div>
+        <div class="menu">
+            <ul>
+                <li><a href="greenstories.html" target="_self">HOME</a></li>
+          
+      <li><a href="vendor.php" target="_blank" >VENDORS LOGIN</a></li>
+               
+ <li><a href= "customer.php" target="_blank">CUSTOMERS LOGIN</a></li>
+      
+                            
+      <li><a href="about.html" target="_blank">ABOUT</a></li>
+                <li><a href="help.html" target="_blank">HELP</a></li>
+            </ul>
+        </div>
+        <div class="left"></div>
+   
+     <div class="center">
+        </div>
+        <div class="foot"></div>
+        </div>
+    </body>
+</html>
+
+
+
+
+
+
+<!---------------HOMEPAGE CSS FILE(home.css)------------------!>
+
+
+
+ .head{
+                align-content:center;
+                height: 100px;
+                
+                background-color: blue;   
+  background-image:url("rural.jpeg");          }
+  
+          .menu{
+                height: 30px;
+                background-color: green;
+                float: left;
+            }
+        
+    .left{   
+                height: 500px;
+                width: 100px;
+                background-color: buttonhighlight;
+              float:left;
+            }
+   
+
+         .center
+            {
+                height: 500px;
+                width: 1000px;
+                background-color: blue;
+                float:left;   
+            }
+    
+   .right{   
+                height: 500px;
+                width: 100px;
+                background-color: blue;
+              float:left;
+            }
+   
+
+        .footer{
+                align-content:center;
+                height: 50px;               
+                background-color: blue;   
+                float: right;
+            }
+    
+ 
+       .foot{
+                height: 40px;
+                width: 1200px;
+                background-color: grey;
+                float:left;
+            }
+            
+ 
+
+           .menu ul li
+            {
+                list-style :none;
+                float: left;
+                border-right:2px black solid;
+            }
+    
+
+        .menu ul li a{
+                text-decoration: none;
+                padding: 10px 40px 10px 40px;
+                display: block;
+            }
+   
+
+         .menu ul li:hover{
+               padding:2px;
+              
+            }
+          
+
+  .menu ul
+		{
+               margin: 0px auto;   
+		background-color:goldenrod;
+                float: left;
+                width: 1200px;
+                padding-left: 0px;
+                margin-top: 0px;
+                height: 30px;
+		}
+        
+
+        input
+                {
+                 border-radius:  5px 15px 5px 15px;
+                 box-decoration-break: none;
+                }
+      
+
+       .left ul li{
+                list-style:  none;
+            
+             }
+            .left ul li a{
+                text-decoration: none;
+                color:black;
+            }
+
+
+
+
+<!-----------------CUSTOMER LOGINPAGE FILE(customer.php)------------->
+
+<html>
+<head>
+<title>Login Form Design</title>
+<link rel="stylesheet" type="text/css" href="stylesheet1.css">
+
+  <style>
+body {
+  background-image: url('ur.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+</style>  
+
+</head>
+<body>
+    <div class="loginbox">
+    <img src="avatar.png" class="avatar">
+        <h2>Login Here</h2>
+        <form method ="post" action="validate.php"> 
+            <p>Customer Name</p>
+            <input type="text" name="user" placeholder="Enter Customer Name" id="a">
+            <p>Password</p>
+            <input type="password"  name="password" placeholder="Enter Password" id="b">
+            <input type="submit" value="Login" name="saer"><br><br>
+            <a href="customerregister.php">Don't have an account?</a>
+        </form>
+    </div>
+</body>
+</html>
+
+
+<!------------CUSTOMER LOGINPAGE CSS FILE(stylesheet1.css)--------------!>
+
+body{
+    margin: 0;
+    padding: 0;
+    background: url(back.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+
+.loginbox{
+    /*width: 400px;
+    height: 500px;*/
+    background: #000;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.loginbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.loginbox input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.loginbox input[type="text"], input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+   background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+.loginbox input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #fb2525;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.loginbox input[type="submit"]:hover
+{
+    /*cursor: pointer;*/
+    background:greenyellow;
+    /*color: #000;*/
+}
+.loginbox a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+}
+
+.loginbox a:hover
+{
+    color: #ffc107;
+}
+
+
+
+
+<!--------------CUSTOMER REGISTRATION FORM(customeregister.php)-------------!>
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>RegisterForm</title>
+<!-- Using external stylesheet to make the registration form look attractive -->
+<link rel = "stylesheet" type = "text/css" href="Style.css"/>
+<!-- Javascript validation for user inputs -->
+<style>
+body {
+  background-image: url('ur.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+</style>
+<script>
+function validate()
+{ 
+var fullname = document.register.fullname.value;
+var username = document.register.username.value; 
+var password = document.register.password.value;
+var conpassword= document.register.conpassword.value;
+if (fullname==null || fullname=="")
+{ 
+alert("ID  can't be blank"); 
+return false; 
+}
+
+else if (username==null || username=="")
+{ 
+alert("Username can't be blank"); 
+return false; 
+}
+else if(password.length&amp;lt;6)
+{ 
+alert("Password must be at least 6 characters long."); 
+return false; 
+} 
+else if (password!=conpassword)
+{ 
+alert("Confirm Password should match with the Password"); 
+return false; 
+} 
+} 
+</script> 
+</head>
+<body>
+ 
+<!-- Make a note that the method type used is post, action page is register.php and validate() function will get called on submit -->
+ <div style="text-align:center"><h1>Create a new Registeration Here </h1></div>
+ <br>
+<form method="post" action="processing.php" onsubmit="return validate();" >
+ <!-- Not advised to use table within the form to enter user details -->
+<table align="center" >
+<tr>
+<td>Customer name</td>
+<td><input type="text" name="username" /></td>
+</tr>
+<tr>
+<td>Password</td>
+<td><input type="password" name="password" /></td>
+</tr>
+<tr>
+<td>Confirm Password</td>
+<td><input type="password" name="conpassword" /></td>
+</tr>
+<tr>
+<td>Address</td>
+<td><input type="text" name="conpass" /></td>
+</tr>
+<tr>
+<td></td>
+<td><input type="submit" value="submit" name="saswe"></input></td>
+</tr>
+</table>
+</form>
+</body>
+</html>
+
+
+
+<!---------CUSTOMER REGISTRATION  CSS FILE(style.css)---------!>
+
+
+/* Style.css -- Using extenal style sheet to design the web page */
+
+table{
+border: 1px solid black;
+border-spacing: 2px;
+}
+
+th, td {
+border: 1px solid black;
+}
+
+input[type=text], input[type=password] {
+background-color: #EEEEEE;
+border: none;
+color: black;
+width:auto;
+padding: 8px 52px;
+text-decoration: none;
+margin: 4px 2px;
+cursor: pointer;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+background-color: #4CAF50;
+border: none;
+color: white;
+padding: 16px 32px;
+text-decoration: none;
+margin: 4px 2px;
+cursor: pointer;
+}
+
+
+
+
+
+<!----------------------CUSTOMER REGISTRATION FORM SUBMTION FILE(processing.php)--------------!>
+
+<?php
+include_once 'database.php';
+if(isset($_POST['saswe']))
+{	 
+                    $first_name = $_POST['username'];
+	 $last_name = $_POST['password'];
+	$last = $_POST['conpassword'];
+                    $name = $_POST['conpass'];
+	 $sql = "INSERT INTO customer (first_name,password,repassword,address)
+	 VALUES ('$first','$first_name','$last_name','$last','$name')";
+	 if (mysqli_query($conn, $sql)) {
+		echo "New record created successfully !";
+	 } else {
+		echo "Error: " . $sql . "
+" . mysqli_error($conn);
+	 }
+	 mysqli_close($conn);
+}
+?>
+
+
+
+<!-------------------DATABASE CREATION FILE(database.php)--------!>
+
+<?php
+$servername='localhost';
+$username='root';
+$password='';
+$dbname = "crud";
+$conn=mysqli_connect($servername,$username,$password,"$dbname");
+if(!$conn){
+   die('Could not Connect My Sql:' .mysql_error());
+}
+?>
+
+
+
+<!------------CUSTOMER LOGINPAGE SUBMTION AND VALIDATION FILE(validate.php)-----!>
+
+<html>
+<style>
+body {
+  background-image: url('ur.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+</style>
+<?php
+session_start();
+if(isset($_POST['saer']))
+{
+    extract($_POST);
+    include 'database.php';
+  $email = $_POST['user'];
+  
+  $pass= $_POST['password'];
+   
+ if (empty($email))
+    {
+   
+echo "<h1>Hello customer plz fill up the customer name fields<h1><br>";
+
+      exit();
+    }
+  
+ if (empty($pass))
+    {
+   
+echo "<h1>Hello customer plz fill up the password fields<h1><br>";
+
+      exit();
+    }
+  
+    $sql=mysqli_query($conn,"SELECT * FROM customer where first_name='$email' and password='$pass'");
+    $row  = mysqli_fetch_array($sql);
+    if(is_array($row))
+    {
+        $_SESSION["id_number"] = $row['id_number'];
+        $_SESSION["first_name"]=$row['first_name'];
+        $_SESSION["password"]=$row['password'];
+        $_SESSION["repassword"]=$row['repassword']; 
+  $_SESSION["address"]=$row['address'];
+       include_once 'booking.php';  
+    }
+    else
+    {
+        echo "Invalid user name/Password";
+    }
+}
+?>
+</html>
+
+
+
+<!-------------------CUSTOMER HOME PAGE FOR BOOKING HOUSES(booking.php)-------------------!>
+
+<!DOCTYPE HTML>
+<html>
+<head>WELCOME CUSTOMER</head>
+<style>
+body {
+  background-image: url('ur.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+</style>
+<script language ="javascript" type="text/javascript">
+function insert()
+{
+alert("your response has been recorded");
+}
+</script>
+
+<title>ONLINE  HOUSE BOOKING SYSTEM </title>
+<body>
+ <!-- Make a note that the method type used is post, action page is register.php and validate() function will get called on submit -->
+ <div style="text-align:center"><h1>BOOK AN ADVANCED DESIGNED DUPLEX HOUSE</h1></div>
+ <br>
+<form method="post" action ="che.php">
+ <!-- Not advised to use table within the form to enter user details -->
+<table align="center" >
+<tr>
+<td>ENTER  CUSTOMER NAME:</td>
+<td><input type="text" name="ids" /></td>
+</tr>
+<tr>
+<td>ENTER  PLACE </td>
+<td><input type="date" name="idv"/></td>
+</tr>
+<tr>
+<td>ENTER  WHICH TYPE OF HOUSE:</td>
+<td><input type="date" name="idc"  /></td>
+</tr>
+<tr>
+<td>ENTER  YOUR BIDS RANGE:</td>
+<td><input type="date" name="idq"  /></td>
+</tr>
+<tr>
+<td>ENTER  YOUR CONTACT:</td>
+<td><input type="date" name="idg"  /></td>
+</tr>
+
+<tr>
+<td>ENTER  YOUR PRESENT ADDRESS:</td>
+<td><input type="date" name="idh"  /></td>
+</tr>
+<tr>
+<td><input type="submit" value="submit" name="saws" onclick="insert()"/></td>
+</tr>
+<tr>
+
+<td><input type="submit" value="logout" name="sawsing"/></td>
+</tr>
+</table>
+</form>
+</body>
+</html>
+<!DOCTYPE HTML>
+
+
+
+
+<!-------------------CUSTOMER BOOKING RESPONSE IN DATABASE(che.php)------------!>
+<html>
+<style>
+body {
+  background-image: url('ur.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+</style>
+<?php
+include_once 'database.php';
+if(isset($_POST['saws']))
+{	 
+	   $first_name = $_POST['ids'];$pass=$_POST['idv'];
+	$password= $_POST['idc'];
+  $as= $_POST['idq'];
+$passw= $_POST['idg'];
+  $asq= $_POST['idh'];
+ $sql="INSERT INTO data (user_name,place,type_of_house,bid_range,contact,address)
+	 VALUES ('$first_name','$pass','$password','$as','$passw','$asq')";
+                
+ if (mysqli_query($conn, $sql)) {
+session_start();
+
+echo"Data inserted succesfully";
+	
+	 } else {
+		echo "Error: " . $sql . "
+" . mysqli_error($conn);
+	 }
+	 mysqli_close($conn);
+}
+
+if(isset($_POST['sawsing']))
+{
+session_start();
+
+header("Location:customer.php");
+}
+?>
+</body>
+</html>
+
+
+
+
+
+
+
+
+<!---------------------------VENDOR LOGIN PAGE(vendor.php)----------------------!>
+
+
+<html>
+<head>
+<title>Login Form Design</title>
+<link rel="stylesheet" type="text/css" href="stylesheet1.css">
+
+ <style>
+body {
+  background-image: url('ur.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+    background-size: 90% 90%;
+}
+</style>   <script>
+function validate()
+{ 
+var username = document.register.user.value;
+ 
+var password = document.register.password.value;
+
+if (username==null || username=="")
+{ 
+alert("Username can't be blank"); 
+return false; 
+}
+else if(password.length&amp;lt;6)
+{ 
+alert("Password must be at least 6 characters long."); 
+return false; 
+} 
+else if (password=null || password=="")
+{ 
+alert(" Password should not blank"); 
+return false; 
+} 
+} 
+</script> 
+
+</head>
+<body>
+    <div class="loginbox">
+    <img src="avatar.png" class="avatar">
+        <h2>Login Here</h2>
+        <form method ="post" action="checking.php" onsubmit="return validate();"> 
+            <p>Username</p>
+            <input type="text" name="user" placeholder="Enter Vendorname" id="a">
+            <p>Password</p>
+            <input type="password"  name="password" placeholder="Enter Password" id="b">
+            <input type="submit" value="Login" name="sas"><br><br>
+            <a href="vendorregister.php">Don't have an account?</a>
+        </form>
+    </div>
+</body>
+</html>
+
+
+
+<!----------------------------VENDORS REGISTRATION FORM(vendorregister.php)----------------------!>
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>RegisterForm</title>
+<!-- Using external stylesheet to make the registration form look attractive -->
+<link rel = "stylesheet" type = "text/css" href="Style.css"/>
+<!-- Javascript validation for user inputs -->
+<style>
+body {
+  background-image: url('rur.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+</style>
+<script>
+function validate()
+{ 
+var fullname = document.register.fullname.value;
+var username = document.register.username.value; 
+var password = document.register.password.value;
+var conpassword= document.register.conpassword.value;
+if (fullname==null || fullname=="")
+{ 
+alert("ID  can't be blank"); 
+return false; 
+}
+
+else if (username==null || username=="")
+{ 
+alert("Username can't be blank"); 
+return false; 
+}
+else if(password.length&amp;lt;6)
+{ 
+alert("Password must be at least 6 characters long."); 
+return false; 
+} 
+else if (password!=conpassword)
+{ 
+alert("Confirm Password should match with the Password"); 
+return false; 
+} 
+} 
+</script> 
+</head>
+<body>
+ 
+<!-- Make a note that the method type used is post, action page is register.php and validate() function will get called on submit -->
+ <div style="text-align:center"><h1>Create a New Registeration Here </h1></div>
+ <br>
+<form method="post" action="process.php" onsubmit="return validate();" >
+ <!-- Not advised to use table within the form to enter user details -->
+<table align="center" >
+<tr>
+<td>ID OF User</td>
+<td><input type="text" name="fullname" /></td>
+</tr>
+<tr>
+<td>Vendorname</td>
+<td><input type="text" name="username" /></td>
+</tr>
+<tr>
+<td>Password</td>
+<td><input type="password" name="password" /></td>
+</tr>
+<tr>
+<td>Confirm Password</td>
+<td><input type="password" name="conpassword" /></td>
+</tr>
+<tr>
+<td>Address</td>
+<td><input type="text" name="conpass" /></td>
+</tr>
+<tr>
+<td></td>
+<td><input type="submit" value="submit" name="saswe"></input></td>
+</tr>
+</table>
+</form>
+</body>
+</html>
+
+
+<!---------------------VENDOR REGISTRATION SUBMITION IN DATABASE(process.php)---------------!>
+
+<?php
+include_once 'database.php';
+if(isset($_POST['saswe']))
+{	 
+	 $first = $_POST['fullname'];
+                    $first_name = $_POST['username'];
+	
+	$last = $_POST['password'];
+                    $name = $_POST['conpassword'];
+$sname=$_POST['conpass'];
+	 $sql = "INSERT INTO vendor (id_number,first_name,password,confirm,address)
+	 VALUES ('$first','$first_name','$last','$name','$sname')";
+	 if (mysqli_query($conn, $sql)) {
+		echo "New record created successfully !";
+	 } else {
+		echo "Error: " . $sql . "
+" . mysqli_error($conn);
+	 }
+	 mysqli_close($conn);
+}
+?>
+
+
+
+<!---------------VENDOR LOGIN PAGE SUBMTION AND VALIDATION FILE(checking.php)------------------------!>
+
+
+<html>
+<style>
+body {
+  background-image: url('ur.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+</style>
+<?php
+session_start();
+if(isset($_POST['sas']))
+{
+    extract($_POST);
+    include 'data.php';
+  $email = $_POST['user'];
+  
+  $pass= $_POST['password'];
+   
+if (empty($email))
+    {
+   
+echo "<h1>Hello vendor plz fill up the vendor name field<h1><br>";
+
+      exit();
+    }
+  
+ if (empty($pass))
+    {
+   
+echo "<h1>Hello vendor plz fill up the password field<h1><br>";
+
+      exit();
+    }
+  
+    $sql=mysqli_query($conn,"SELECT * FROM vendor where first_name='$email' and password='$pass'");
+    $row  = mysqli_fetch_array($sql);
+    if(is_array($row))
+    {
+        $_SESSION["id_number"] = $row['id_number'];
+        $_SESSION["first_name"]=$row['first_name'];
+        $_SESSION["password"]=$row['password'];
+        $_SESSION["confirm"]=$row['confirm']; 
+       include_once 'vendorhome.php';  
+    }
+    else
+    {
+        echo "Invalid user name/Password";
+    }
+}
+?>
+</html>
+
+
+
+<!-----------------------VENDOR HOME PAGE TO COMMUNICATE WITH THE CUSTOMER(vendorhome.php)------------!>
+
+<!DOCTYPE HTML>
+<html>
+<head>WELCOME VENDOR</head>
+<style>
+body {
+  background-image: url('ur.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+</style>
+<script language ="javascript" type="text/javascript">
+function insert()
+{
+alert("your response has been recorded");
+}
+</script>
+
+<title>ONLINE BOOKED HOUSES </title>
+<body>
+ <!-- Make a note that the method type used is post, action page is register.php and validate() function will get called on submit -->
+ <div style="text-align:center"><h1>COMMUNICATE WITH CUSTOMER BY  SIMPLE PROCEDURE</h1></div>
+ <br>
+<form method="post" action ="recording.php">
+ <!-- Not advised to use table within the form to enter user details -->
+<table align="center" >
+<tr>
+<td>ENTER YOUR ID:</td>
+<td><input type="text" name="idsa" /></td>
+</tr>
+<tr>
+
+<tr>
+<td>ENTER THE PLACE :</td>
+<td><input type="text" name="idv" /></td>
+</tr>
+<tr>
+<td></td>
+<td><input type="submit" value="submit" name="saw" onclick="insert()"/></td>
+</tr>
+<tr>
+<td></td>
+<td><input type="submit" value="Logout" name="sawing" /></td>
+</tr>
+</table>
+</form>
+</body>
+</html>
+<!DOCTYPE HTML>
+
+
+
+
+<!-----------------------VENDORS FETCHING DATA FROM DATABASE OF CUSTOMER DETAILS(recording.php)---------------!>
+
+<?php
+include_once 'database.php';
+if(isset($_POST['saw']))
+{	 
+	   
+	$da1=$_POST['idv'];
+ $sql = "SELECT  customer,place,contact,address from  data  WHERE  place='$dal';
+   if($retval = mysqli_query( $conn,$sql))
+{ 
+    while($row = mysqli_fetch_array($retval, MYSQLI_ASSOC)) {
+      echo "CUSTOMER NAME:{$row['customer']}  <br> ".
+  " PLACE : {$row['place']} <br> ".
+"BID RANGE: {$row['bid_range']} <br> ".
+ "CONTACT NUMBER  : {$row['cotact']} <br> ".
+ "ADDRESS  : {$row['address']} <br> ".
+   "--------------------------------<br>";
+}
+if(! $retval ) {
+      die('Could not get data: ' . mysqli_error());
+   }
+ echo "Fetched data successfully\n";
+
+  mysqli_close($conn);
+} 
+  } else {
+		echo "Error: " . $sql . "
+" . mysqli_error($conn);
+	 }
+ if(isset($_POST['sawing']))
+{
+session_start();
+
+header("Location:vendor.php");
+}
+?>
+<!DOCTYPE HTML>
+<html>
+<head>THANK YOU </head>
+<style>
+body {
+  background-image: url('ur.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+</style>
+</head>
+<body>
+
+</body>
+
+</html>
+<!DOCTYPE HTML>
+
+
+
+<!-------------------GREEN STORIES ABOUT(about.html)------------------!>
+
+<html>
+<head>
+<style>
+body {
+  background-image: url('ur.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}</style> 
+<title>
+about us</title>
+About Us</head>
+
+<body>
+<h1 align="center">THIS IS THE PROJECT DONE BY THE FUTURE DEVELOPERS </h1>
+<h1 align="center">FROM GREEN STORIES</h1>
+<div align="center">© GREEN STORIES GROUP</div>
+
+
+
+
+<!------------------------GREEN STORIES HELPDESK(help.html)----------------------!>
+
+<html>
+<head>
+<style>
+body {
+  background-image: url('ur.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}</style>  
+</head>
+
+<body>
+<h1>CONTACT NUMBER :</h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1>FOR VENDOR SERVICES : 9989142122</h1>
+<h1>FOR CUSTOMER SERVICES: 6305958425</h1>
+<h1>HELPDESK: 91773412153</h1>
+</body>
+</html>
+
+
+
+
+
+
+<!---------------------------------------------------------------------------------THANK YOU---------------------------!>
